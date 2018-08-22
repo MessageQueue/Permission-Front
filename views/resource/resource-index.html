@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>资源管理</title>
+    <link rel="stylesheet" href="../../plugins/hplus/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../plugins/hplus/css/animate.min.css">
+    <link rel="stylesheet" href="../../plugins/hplus/css/style.min862f.css">
+    <link href="../../plugins/hplus/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="../../plugins/hplus/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link rel="stylesheet" href="../../js/plugins/pagination.css">
+</head>
+<body ng-app="app" class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="ResourceController">
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>边框</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="table_basic.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="row">
+                        <div class="col-sm-5 m-b-xs">
+                            <!--<div data-toggle="buttons" class="btn-group">-->
+                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="addItem()"><i class="fa fa-plus"></i> 新增
+                            </button>
+                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="editItem()"><i class="fa fa-paste"></i> 编辑
+                            </button>
+                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="deleteItem()"><i class="fa fa-times"></i> 删除
+                            </button>
+
+                        </div>
+                        <div class="col-sm-4 m-b-xs">
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="input-group">
+                                <input type="text" placeholder="请输入关键词" class="input-sm form-control"> <span
+                                    class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered " style="margin-top: 10px">
+                        <thead>
+                        <tr>
+                            <th width="50px"></th>
+                            <th>#</th>
+                            <th>父级资源</th>
+                            <th>资源名称</th>
+                            <th>资源地址</th>
+                            <th>资源状态</th>
+                            <th>创建时间</th>
+                            <th>修改时间</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in entitys">
+                            <td>
+                                <input type="checkbox" class="i-checks" ng-click="checkItem($event,item)">
+                            </td>
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.pid }}</td>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.url }}</td>
+                            <td>{{ item.status }}</td>
+                            <td>{{ item.createDate }}</td>
+                            <td>{{ item.updateDate }}</td>
+                        </tr>
+                        </tbody>
+
+                    </table>
+                    <tm-pagination conf="paginationConf"></tm-pagination>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="../../plugins/hplus/js/jquery.min.js"></script>
+<script src="../../plugins/hplus/js/bootstrap.min.js"></script>
+<script src="../../plugins/hplus/js/plugins/sweetalert/sweetalert.min.js"></script>
+<script src="../../plugins/hplus/js/plugins/layer/layer.js"></script>
+<script src="../../plugins/hplus/js/plugins/jeditable/jquery.jeditable.js"></script>
+<script src="../../plugins/hplus/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="../../plugins/hplus/js/content.min.js?v=1.0.0"></script>
+<script src="../../plugins/hplus/js/plugins/iCheck/icheck.min.js"></script>
+<script src="../../plugins/hplus/js/demo/peity-demo.min.js"></script>
+<script src="../../node_modules/angular/angular.min.js"></script>
+<script src="../../js/plugins/tm.pagination.js"></script>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/baseController.js"></script>
+<script src="../../js/service/IResourceService.js"></script>
+<script src="../../js/controller/ResourceController.js"></script>
+
+</body>
+</html>

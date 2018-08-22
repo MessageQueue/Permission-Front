@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:18:52 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增资源</title>
+    <link href="../../plugins/hplus/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="../../plugins/hplus/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="../../plugins/hplus/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="../../plugins/hplus/css/animate.min.css" rel="stylesheet">
+    <link href="../../plugins/hplus/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link href="../../plugins/hplus/css/plugins/jsTree/style.min.css" rel="stylesheet">
+    <link href="../../plugins/hplus/css/plugins/jsTree/style.min.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="app">
+<div class="wrapper wrapper-content" ng-controller="ResourceController">
+    <div class="ibox float-e-margins">
+
+        <form>
+            <div class="form-group">
+                <label>上级资源</label>
+                <input type="text" placeholder="请输入上级资源名称" class="form-control"
+                       ng-model="entity.pId"
+                       name="p_id"/>
+            </div>
+            <div class="form-group">
+                <label>资源名称</label>
+                <input type="text" placeholder="请输入资源名称名称" class="form-control"
+                       ng-model="entity.name"
+                       name="name"/>
+            </div>
+            <div class="form-group">
+                <label>资源地址</label>
+                <input type="text" placeholder="请输入资源地址名称" class="form-control"
+                       ng-model="entity.url"
+                       name="url"/>
+            </div>
+            <div class="form-group">
+                <label>资源状态</label>
+                <input type="text" placeholder="请输入资源状态名称" class="form-control"
+                       ng-model="entity.status"
+                       name="status"/>
+            </div>
+            <div>
+                <button class="btn btn-primary" ng-click="save()">保存</button>
+                <button class="btn btn-warning" ng-click="closeDialog()">取消</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="../../plugins/hplus/js/jquery.min.js"></script>
+<script src="../../plugins/hplus/js/bootstrap.min.js"></script>
+<script src="../../plugins/hplus/js/plugins/sweetalert/sweetalert.min.js"></script>
+<script src="../../plugins/hplus/js/plugins/layer/layer.js"></script>
+<script src="../../plugins/hplus/js/plugins/jeditable/jquery.jeditable.js"></script>
+<script src="../../plugins/hplus/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="../../plugins/hplus/js/content.min.js?v=1.0.0"></script>
+<script src="../../plugins/hplus/js/plugins/iCheck/icheck.min.js"></script>
+<script src="../../plugins/hplus/js/demo/peity-demo.min.js"></script>
+<script src="../../node_modules/angular/angular.min.js"></script>
+<script src="../../js/plugins/tm.pagination.js"></script>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/baseController.js"></script>
+<script src="../../js/service/IResourceService.js"></script>
+<script src="../../js/controller/ResourceController.js"></script>
+
+<!--<script src="../../plugins/hplus/js/plugins/validate/bootstrapValidator.min.js"></script>-->
+<!--<script src="../../plugins/hplus/js/tree/treeWrapper.js"></script>-->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>角色资源管理</title>
+    <link rel="stylesheet" href="../../plugins/hplus/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../plugins/hplus/css/animate.min.css">
+    <link rel="stylesheet" href="../../plugins/hplus/css/style.min862f.css">
+    <link rel="stylesheet" href="../../plugins/hplus/css/plugins/bootstrap-table/bootstrap-table.min.css">
+    <link href="../../plugins/hplus/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+</head>
+<body ng-app="app">
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="RoleResoureceController"  ng-init="findAll()">
+
+
+    <div class="ibox float-e-margins">
+        <div class="ibox-title">
+            <h5>角色资源管理</h5>
+        </div>
+        <div class="ibox-content">
+            <table id="table" bs-table-control="pageInfo"></table>
+        </div>
+    </div>
+
+    <div id="toolbar">
+        <div class="btn-group hidden-xs" id="exampleToolbar" role="group">
+            <button type="button" class="btn btn-outline btn-default" ng-click="addItem()">
+                <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn btn-outline btn-default" ng-click="editItem()">
+                <i class="glyphicon glyphicon-edit" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="btn btn-outline btn-default">
+                <i class="glyphicon glyphicon-trash" aria-hidden="true" ng-click="deleteItem()"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="../../plugins/hplus/js/jquery.min.js"></script>
+<script src="../../plugins/hplus/js/bootstrap.min.js"></script>
+<script src="../../plugins/hplus/js/plugins/sweetalert/sweetalert.min.js"></script>
+<script src="../../plugins/hplus/js/plugins/layer/layer.js"></script>
+
+<script src="../../node_modules/angular/angular.min.js"></script>
+<script src="../../node_modules/bootstrap-table/dist/bootstrap-table.js"></script>
+<script src="../../node_modules/bootstrap-table/dist/extensions/angular/bootstrap-table-angular.min.js"></script>
+<script src="../../node_modules/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/baseController.js"></script>
+<script src="../../js/service/IRoleResoureceService.js"></script>
+<script src="../../js/controller/RoleResoureceController.js"></script>
+
+</body>
+</html>

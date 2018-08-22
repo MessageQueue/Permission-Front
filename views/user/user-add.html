@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:18:52 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增用户</title>
+    <link href="../../plugins/hplus/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="../../plugins/hplus/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="../../plugins/hplus/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
+    <link href="../../plugins/hplus/css/animate.min.css" rel="stylesheet">
+    <link href="../../plugins/hplus/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link href="../../plugins/hplus/css/plugins/jsTree/style.min.css" rel="stylesheet">
+    <link href="../../plugins/hplus/css/plugins/jsTree/style.min.css" rel="stylesheet">
+
+</head>
+
+<body ng-app="app">
+<div class="wrapper wrapper-content" ng-controller="UserController">
+    <div class="ibox float-e-margins">
+
+        <form>
+                                                                                            <div class="form-group">
+                        <label>用户名称</label>
+                        <input type="text" placeholder="请输入用户名称名称" class="form-control"
+                               ng-model="entity.name"
+                               name="name"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>用户头像</label>
+                        <input type="text" placeholder="请输入用户头像名称" class="form-control"
+                               ng-model="entity.avartar"
+                               name="avartar"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>用户账号</label>
+                        <input type="text" placeholder="请输入用户账号名称" class="form-control"
+                               ng-model="entity.account"
+                               name="account"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>用户密码</label>
+                        <input type="text" placeholder="请输入用户密码名称" class="form-control"
+                               ng-model="entity.passwd"
+                               name="passwd"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>用户邮箱</label>
+                        <input type="text" placeholder="请输入用户邮箱名称" class="form-control"
+                               ng-model="entity.email"
+                               name="email"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>加盐秘钥</label>
+                        <input type="text" placeholder="请输入加盐秘钥名称" class="form-control"
+                               ng-model="entity.salt"
+                               name="salt"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>用户电话</label>
+                        <input type="text" placeholder="请输入用户电话名称" class="form-control"
+                               ng-model="entity.phone"
+                               name="phone"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>用户生日</label>
+                        <input type="text" placeholder="请输入用户生日名称" class="form-control"
+                               ng-model="entity.brithday"
+                               name="brithday"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>状态</label>
+                        <input type="text" placeholder="请输入状态名称" class="form-control"
+                               ng-model="entity.status"
+                               name="status"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>性别</label>
+                        <input type="text" placeholder="请输入性别名称" class="form-control"
+                               ng-model="entity.sex"
+                               name="sex"/>
+                    </div>
+                                                                                                                                <div>
+                <button class="btn btn-primary" ng-click="save()">保存</button>
+                <button class="btn btn-warning" ng-click="closeDialog()">取消</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="../../plugins/hplus/js/jquery.min.js?v=2.1.4"></script>
+<script src="../../plugins/hplus/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="../../plugins/hplus/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="../../plugins/hplus/js/plugins/layer/layer.js"></script>
+<script src="../../plugins/hplus/js/content.min.js?v=1.0.0"></script>
+<script src="../../plugins/hplus/js/plugins/iCheck/icheck.min.js"></script>
+<script src="../../plugins/hplus/js/demo/peity-demo.min.js"></script>
+<script src="../../plugins/hplus/js/plugins/jsTree/jstree.min.js"></script>
+
+
+<script src="../../node_modules/angular/angular.min.js"></script>
+<script src="../../node_modules/bootstrap-table/dist/bootstrap-table.js"></script>
+<script src="../../node_modules/bootstrap-table/dist/extensions/angular/bootstrap-table-angular.min.js"></script>
+<script src="../../node_modules/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="../../js/common/base.js"></script>
+<script src="../../js/common/baseController.js"></script>
+<script src="../../js/service/IUserService.js"></script>
+<script src="../../js/controller/UserController.js"></script>
+
+<!--<script src="../../plugins/hplus/js/plugins/validate/bootstrapValidator.min.js"></script>-->
+<!--<script src="../../plugins/hplus/js/tree/treeWrapper.js"></script>-->
+</body>
+</html>
