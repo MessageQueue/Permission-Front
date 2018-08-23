@@ -2,80 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a063c6dd-63a0-4a20-b256-e1b5beb9f1ab" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/js/common/base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/common/baseController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/common/table-expand.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/controller/ResourceController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/controller/RoleController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/controller/RoleResoureceController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/controller/UserController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/controller/UserRoleController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/plugins/pagination.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/plugins/pagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/plugins/pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/plugins/tm.pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/plugins/tm.pagination.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/service/IResourceService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/service/IRoleResoureceService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/service/IRoleService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/service/IUserRoleService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/service/IUserService.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/mobile/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/mobile/need/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/theme/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/theme/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/theme/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/theme/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/theme/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/theme/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/menu-template/menu-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/menu-template/menu-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/resource/resource-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/resource/resource-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/resource/resource-index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/role/role-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/role/role-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/roleresourece/roleresourece-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/roleresourece/roleresourece-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user/user-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/user/user-index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/userrole/userrole-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/userrole/userrole-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/jquery-ui-1.10.4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/hplus/js/jquery-ui-1.10.4.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/jquery-ui/jquery-ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/plugins/hplus/js/plugins/jquery-ui/jquery-ui.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/extend/layer.ext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/layDate¹ÙÍø.url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/laydate/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/laydate/need/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/laydate/skins/dahong/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/laydate/skins/dahong/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/laydate/skins/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/laydate/skins/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/laydate/skins/molv/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/laydate/skins/molv/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate-v1.1/¸üÐÂÈÕÖ¾.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate/laydate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate/need/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate/skins/dahong/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate/skins/dahong/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate/skins/default/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate/skins/default/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate/skins/molv/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/laydate/skins/molv/laydate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/layer.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/layim/layim.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/layim/layim.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/layim/loading.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/skin/layer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/skin/layer.ext.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugins/hplus/js/plugins/layer/skin/moon/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common/baseController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common/baseController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/controller/ResourceController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controller/ResourceController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/resource/resource-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/resource/resource-add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/resource/resource-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/resource/resource-index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,78 +18,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="baseController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/common/baseController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="117" column="31" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResourceController.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/controller/ResourceController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="701">
-              <caret line="147" lean-forward="true" selection-end-line="148" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IResourceService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/service/IResourceService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource-index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/resource/resource-index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="41" column="104" selection-start-line="41" selection-start-column="94" selection-end-line="41" selection-end-column="104" />
-              <folding>
-                <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource-add.html" pinned="false" current-in-tab="false">
+    <leaf>
+      <file leaf-file-name="resource-add.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/resource/resource-add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="618">
-              <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="role-index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/role/role-index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="33" column="92" selection-start-line="33" selection-start-column="82" selection-end-line="33" selection-end-column="92" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pagination.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/plugins/pagination.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="18" />
+            <state relative-caret-position="632">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -172,23 +39,12 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bsTableControl</find>
-      <find>layer</find>
-      <find>float:right</find>
-      <find>float-e-margins</find>
-      <find>layer.min.js</find>
-      <find>checkeds</find>
-      <find>selectIds</find>
-      <find>reloadList</find>
-      <find>save</find>
-      <find>pageInfo</find>
       <find>bsTable</find>
-      <find>showColumns: true,</find>
+      <find />
       <find>pageList</find>
       <find>sidePagination</find>
       <find>pageNumber</find>
-      <find>findAll</find>
-      <find>var index = $scope.getCurrentIndex();</find>
+      <find />
       <find>IResourceService</find>
       <find>onRefresh</find>
       <find>refresh</find>
@@ -198,10 +54,21 @@
       <find>totalItems</find>
       <find>findPage</find>
       <find>closeDialog</find>
-      <find>dataTables-example</find>
-      <find>deleteItem</find>
-      <find>delete</find>
       <find>console.log($scope.selectIds);</find>
+      <find>dataTables-example</find>
+      <find>delete</find>
+      <find>getChildFrame</find>
+      <find>addItem</find>
+      <find>pagesLength</find>
+      <find>abc</find>
+      <find>editItem</find>
+      <find>findAll</find>
+      <find>refreshPage</find>
+      <find>cancelButtonText</find>
+      <find>deleteItem</find>
+      <find>allowOutsideClick</find>
+      <find>entitys</find>
+      <find>entity</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -219,14 +86,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/views/main.html" />
         <option value="$PROJECT_DIR$/views/layer.html" />
         <option value="$PROJECT_DIR$/js/table-config.js" />
         <option value="$PROJECT_DIR$/js/common/menu.js" />
         <option value="$PROJECT_DIR$/js/aa.js" />
         <option value="$PROJECT_DIR$/js/menu/menu.js" />
         <option value="$PROJECT_DIR$/js/common/table-expand.js" />
-        <option value="$PROJECT_DIR$/js/app.js" />
         <option value="$PROJECT_DIR$/plugins/hplus/css/plugins/bootstrap-table/bootstrap-table.min.css" />
         <option value="$PROJECT_DIR$/js/menu/menuController.js" />
         <option value="$PROJECT_DIR$/js/menu/RoleResoureceController.js" />
@@ -248,11 +113,13 @@
         <option value="$PROJECT_DIR$/js/common/base.js" />
         <option value="$PROJECT_DIR$/js/plugins/pagination.css" />
         <option value="$PROJECT_DIR$/js/plugins/tm.pagination.js" />
-        <option value="$PROJECT_DIR$/views/resource/resource-index.html" />
-        <option value="$PROJECT_DIR$/views/resource/resource-add.html" />
         <option value="$PROJECT_DIR$/js/service/IResourceService.js" />
+        <option value="$PROJECT_DIR$/js/app.js" />
+        <option value="$PROJECT_DIR$/views/resource/resource-index.html" />
         <option value="$PROJECT_DIR$/js/common/baseController.js" />
+        <option value="$PROJECT_DIR$/views/main.html" />
         <option value="$PROJECT_DIR$/js/controller/ResourceController.js" />
+        <option value="$PROJECT_DIR$/views/resource/resource-add.html" />
       </list>
     </option>
   </component>
@@ -271,8 +138,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1787" />
-    <option name="y" value="23" />
+    <option name="x" value="1779" />
+    <option name="y" value="34" />
     <option name="width" value="1711" />
     <option name="height" value="1004" />
   </component>
@@ -282,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,24 +164,31 @@
             <path>
               <item name="Admin-Manager-Permission" type="b2602c69:ProjectViewProjectNode" />
               <item name="Admin-Manager-Permission" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Admin-Manager-Permission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Admin-Manager-Permission" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="hplus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Admin-Manager-Permission" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Admin-Manager-Permission" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="hplus" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Admin-Manager-Permission" type="b2602c69:ProjectViewProjectNode" />
               <item name="Admin-Manager-Permission" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Admin-Manager-Permission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Admin-Manager-Permission" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -719,7 +592,7 @@
     </configuration>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -737,37 +610,39 @@
       <workItem from="1533277067094" duration="1532000" />
       <workItem from="1534815172186" duration="13866000" />
       <workItem from="1534906030546" duration="5557000" />
-      <workItem from="1534920452379" duration="9759000" />
+      <workItem from="1534920452379" duration="9955000" />
+      <workItem from="1534987223915" duration="16082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69305000" />
+    <option name="totallyTimeSpent" value="85583000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1787" y="23" width="1711" height="1004" extended-state="0" />
+    <frame x="1779" y="34" width="1711" height="1004" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24911243" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32807216" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32807216" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32897863" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2756219" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.5876516" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Nl-Palette" order="2" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Properties" order="3" />
+      <window_info id="Nl-Palette" order="2" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Database" order="3" />
@@ -775,22 +650,22 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32807216" />
       <window_info anchor="right" id="Maven Projects" order="3" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24911243" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32897863" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info anchor="right" id="Properties" order="5" />
@@ -801,10 +676,9 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.2756219" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32807216" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32807216" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32897863" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32807216" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info id="Favorites" order="7" side_tool="true" />
@@ -827,9 +701,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/menu/ResourceController.js" />
-    <entry file="file://$PROJECT_DIR$/views/menu/menu-index.html" />
-    <entry file="file://$PROJECT_DIR$/js/resource/Resource.html" />
     <entry file="file://$PROJECT_DIR$/views/menu/menuController.js" />
     <entry file="file://$PROJECT_DIR$/views/layer.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -838,7 +709,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/app.js" />
     <entry file="file://$PROJECT_DIR$/views/resource/Resource.html" />
     <entry file="file://$PROJECT_DIR$/views/role/Role.html" />
     <entry file="file://$PROJECT_DIR$/plugins/hplus/js/plugins/layer/layer.min.js" />
@@ -957,13 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controller/UserController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1034,13 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins/pagination.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-872">
@@ -1055,13 +911,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/plugins/pagination.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/role/role-index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
@@ -1069,21 +918,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/common/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="15852" column="12" selection-start-line="15852" selection-start-column="12" selection-end-line="15852" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins/tm.pagination.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        <state relative-caret-position="254">
+          <caret line="45" column="40" lean-forward="true" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/plugins/pagination.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugins/hplus/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="1" column="2084" selection-start-line="1" selection-start-column="2084" selection-end-line="1" selection-end-column="2084" />
           <folding>
-            <element signature="e#49#55#0" expanded="true" />
-            <element signature="e#80#86#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/plugins/hplus/js/plugins/toastr/toastr.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="729">
-          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        <state>
+          <caret column="4252" selection-start-column="4252" selection-end-column="4252" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1094,34 +977,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/resource/resource-add.html">
+    <entry file="file://$PROJECT_DIR$/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="618">
-          <caret line="68" column="47" lean-forward="true" selection-start-line="68" selection-start-column="47" selection-end-line="68" selection-end-column="47" />
+        <state relative-caret-position="447">
+          <caret line="28" column="34" lean-forward="true" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common/baseController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/ResourceController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="716">
+          <caret line="55" column="11" lean-forward="true" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1594">
+          <caret line="212" column="51" lean-forward="true" selection-start-line="212" selection-start-column="51" selection-end-line="212" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/resource/resource-index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="41" column="104" selection-start-line="41" selection-start-column="94" selection-end-line="41" selection-end-column="104" />
+        <state relative-caret-position="209">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#table#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common/baseController.js">
+    <entry file="file://$PROJECT_DIR$/views/resource/resource-add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="117" column="31" selection-start-line="117" selection-start-column="31" selection-end-line="117" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/controller/ResourceController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="701">
-          <caret line="147" lean-forward="true" selection-end-line="148" selection-end-column="3" />
+        <state relative-caret-position="632">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>

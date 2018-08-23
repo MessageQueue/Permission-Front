@@ -33,17 +33,20 @@
                 <div class="ibox-content">
 
                     <div class="row">
-                        <div class="col-sm-5 m-b-xs">
+                        <div class="col-sm-8 m-b-xs">
                             <!--<div data-toggle="buttons" class="btn-group">-->
-                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="addItem()"><i class="fa fa-plus"></i> 新增
+                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="modalInsertUi()"><i
+                                    class="fa fa-plus"></i> 新增
                             </button>
-                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="editItem()"><i class="fa fa-paste"></i> 编辑
+                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="updateEntity()"><i
+                                    class="fa fa-paste"></i> 编辑
                             </button>
-                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="deleteItem()"><i class="fa fa-times"></i> 删除
+                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="deleteEntity()"><i
+                                    class="fa fa-times"></i> 删除
                             </button>
-
-                        </div>
-                        <div class="col-sm-4 m-b-xs">
+                            <button id="refresh" class="btn  btn-w-m  btn-primary" type="button"
+                                    ng-click="refreshPage()"><i class="fa fa-times"></i> 刷新
+                            </button>
 
                         </div>
                         <div class="col-sm-3">
@@ -91,7 +94,6 @@
     </div>
 
 </div>
-
 <script src="../../plugins/hplus/js/jquery.min.js"></script>
 <script src="../../plugins/hplus/js/bootstrap.min.js"></script>
 <script src="../../plugins/hplus/js/plugins/sweetalert/sweetalert.min.js"></script>
@@ -103,6 +105,7 @@
 <script src="../../plugins/hplus/js/demo/peity-demo.min.js"></script>
 <script src="../../node_modules/angular/angular.min.js"></script>
 <script src="../../js/plugins/tm.pagination.js"></script>
+<script src="../../js/app.js"></script>
 <script src="../../js/common/base.js"></script>
 <script src="../../js/common/baseController.js"></script>
 <script src="../../js/service/IResourceService.js"></script>
