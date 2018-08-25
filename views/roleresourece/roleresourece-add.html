@@ -2,12 +2,11 @@
 <html>
 
 
-<!-- Mirrored from www.zi-han.net/theme/hplus/layouts.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:18:52 GMT -->
 <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>新增角色资源</title>
+    <title>{{windownInfo.title}}</title>
     <link href="../../plugins/hplus/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
     <link href="../../plugins/hplus/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
     <link href="../../plugins/hplus/css/plugins/morris/morris-0.4.3.min.css" rel="stylesheet">
@@ -19,21 +18,21 @@
 </head>
 
 <body ng-app="app">
-<div class="wrapper wrapper-content" ng-controller="RoleResoureceController">
+<div class="wrapper wrapper-content" ng-controller="RoleResoureceController" ng-init="judgeInsertOrUpdate()">
     <div class="ibox float-e-margins">
 
         <form>
                                                                                             <div class="form-group">
                         <label>角色编号</label>
                         <input type="text" placeholder="请输入角色编号名称" class="form-control"
-                               ng-model="entity.role_id"
-                               name="role_id"/>
+                               ng-model="entity.roleId"
+                               name="roleId"/>
                     </div>
                                                                 <div class="form-group">
                         <label>资源编号</label>
                         <input type="text" placeholder="请输入资源编号名称" class="form-control"
-                               ng-model="entity.resource_id"
-                               name="resource_id"/>
+                               ng-model="entity.resourceId"
+                               name="resourceId"/>
                     </div>
                                                                 <div class="form-group">
                         <label>状态</label>
@@ -42,27 +41,26 @@
                                name="status"/>
                     </div>
                                                                                                                                 <div>
-                <button class="btn btn-primary" ng-click="save()">保存</button>
+                <button class="btn btn-primary" ng-click="saveOrUpdateEntity()">{{isUpdate?"修改":"保存"}}</button>
                 <button class="btn btn-warning" ng-click="closeDialog()">取消</button>
             </div>
         </form>
     </div>
 </div>
 
-<script src="../../plugins/hplus/js/jquery.min.js?v=2.1.4"></script>
-<script src="../../plugins/hplus/js/bootstrap.min.js?v=3.3.6"></script>
-<script src="../../plugins/hplus/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="../../plugins/hplus/js/jquery.min.js"></script>
+<script src="../../plugins/hplus/js/bootstrap.min.js"></script>
+<script src="../../plugins/hplus/js/plugins/sweetalert/sweetalert.min.js"></script>
 <script src="../../plugins/hplus/js/plugins/layer/layer.js"></script>
+<script src="../../plugins/hplus/js/plugins/jeditable/jquery.jeditable.js"></script>
+<script src="../../plugins/hplus/js/plugins/peity/jquery.peity.min.js"></script>
 <script src="../../plugins/hplus/js/content.min.js?v=1.0.0"></script>
 <script src="../../plugins/hplus/js/plugins/iCheck/icheck.min.js"></script>
 <script src="../../plugins/hplus/js/demo/peity-demo.min.js"></script>
-<script src="../../plugins/hplus/js/plugins/jsTree/jstree.min.js"></script>
-
-
 <script src="../../node_modules/angular/angular.min.js"></script>
-<script src="../../node_modules/bootstrap-table/dist/bootstrap-table.js"></script>
-<script src="../../node_modules/bootstrap-table/dist/extensions/angular/bootstrap-table-angular.min.js"></script>
-<script src="../../node_modules/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="../../js/app.js"></script>
+<script src="../../js/plugins/tm.pagination.js"></script>
+
 <script src="../../js/common/base.js"></script>
 <script src="../../js/common/baseController.js"></script>
 <script src="../../js/service/IRoleResoureceService.js"></script>

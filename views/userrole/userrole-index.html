@@ -6,46 +6,109 @@
     <link rel="stylesheet" href="../../plugins/hplus/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../plugins/hplus/css/animate.min.css">
     <link rel="stylesheet" href="../../plugins/hplus/css/style.min862f.css">
-    <link rel="stylesheet" href="../../plugins/hplus/css/plugins/bootstrap-table/bootstrap-table.min.css">
     <link href="../../plugins/hplus/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="../../plugins/hplus/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link rel="stylesheet" href="../../js/plugins/pagination.css">
 </head>
 <body ng-app="app">
-<div class="wrapper wrapper-content animated fadeInRight" ng-controller="UserRoleController"  ng-init="findAll()">
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="UserRoleController" ng-init="findAll()">
 
 
-    <div class="ibox float-e-margins">
-        <div class="ibox-title">
-            <h5>用户角色管理</h5>
-        </div>
-        <div class="ibox-content">
-            <table id="table" bs-table-control="pageInfo"></table>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>用户角色管理</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="table_basic.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="row">
+                        <div class="col-sm-8 m-b-xs">
+                            <!--<div data-toggle="buttons" class="btn-group">-->
+                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="modalInsertUi()"><i
+                                    class="fa fa-plus"></i> 新增
+                            </button>
+                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="updateEntity()"><i
+                                    class="fa fa-paste"></i> 编辑
+                            </button>
+                            <button class="btn  btn-w-m  btn-primary" type="button" ng-click="deleteEntity()"><i
+                                    class="fa fa-times"></i> 删除
+                            </button>
+                            <button id="refresh" class="btn  btn-w-m  btn-primary" type="button"
+                                    ng-click="refreshPage()"><i class="fa fa-times"></i> 刷新
+                            </button>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="input-group">
+                                <input type="text" placeholder="请输入关键词" class="input-sm form-control"> <span
+                                    class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> 搜索</button> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="table table-bordered " style="margin-top: 10px">
+                        <thead>
+                        <tr>
+                            <th width="50px">
+                                <input type="checkbox" class="i-checks" ng-click="chooseAll($event)">
+                            </th>
+                                                        <th>id</th>
+                                                        <th>用户编号</th>
+                                                        <th>角色标号</th>
+                                                        <th>状态</th>
+                                                        <th>创建时间</th>
+                                                        <th>更新时间</th>
+                                                    </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in entitys">
+                            <td>
+                                <input type="checkbox" class="i-checks" ng-click="checkItem($event,item)">
+                            </td>
+                                                            <td>{{item.id}}</td>
+                                                            <td>{{item.uId}}</td>
+                                                            <td>{{item.rId}}</td>
+                                                            <td>{{item.status}}</td>
+                                                            <td>{{item.createDate}}</td>
+                                                            <td>{{item.updateDate}}</td>
+                            
+                        </tr>
+                        </tbody>
+
+                    </table>
+                    <tm-pagination conf="paginationConf"></tm-pagination>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="toolbar">
-        <div class="btn-group hidden-xs" id="exampleToolbar" role="group">
-            <button type="button" class="btn btn-outline btn-default" ng-click="addItem()">
-                <i class="glyphicon glyphicon-plus" aria-hidden="true"></i>
-            </button>
-            <button type="button" class="btn btn-outline btn-default" ng-click="editItem()">
-                <i class="glyphicon glyphicon-edit" aria-hidden="true"></i>
-            </button>
-            <button type="button" class="btn btn-outline btn-default">
-                <i class="glyphicon glyphicon-trash" aria-hidden="true" ng-click="deleteItem()"></i>
-            </button>
-        </div>
-    </div>
 </div>
-
 <script src="../../plugins/hplus/js/jquery.min.js"></script>
 <script src="../../plugins/hplus/js/bootstrap.min.js"></script>
 <script src="../../plugins/hplus/js/plugins/sweetalert/sweetalert.min.js"></script>
 <script src="../../plugins/hplus/js/plugins/layer/layer.js"></script>
-
+<script src="../../plugins/hplus/js/plugins/jeditable/jquery.jeditable.js"></script>
+<script src="../../plugins/hplus/js/plugins/peity/jquery.peity.min.js"></script>
+<script src="../../plugins/hplus/js/content.min.js?v=1.0.0"></script>
+<script src="../../plugins/hplus/js/plugins/iCheck/icheck.min.js"></script>
+<script src="../../plugins/hplus/js/demo/peity-demo.min.js"></script>
 <script src="../../node_modules/angular/angular.min.js"></script>
-<script src="../../node_modules/bootstrap-table/dist/bootstrap-table.js"></script>
-<script src="../../node_modules/bootstrap-table/dist/extensions/angular/bootstrap-table-angular.min.js"></script>
-<script src="../../node_modules/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
+<script src="../../js/plugins/tm.pagination.js"></script>
+<script src="../../js/app.js"></script>
 <script src="../../js/common/base.js"></script>
 <script src="../../js/common/baseController.js"></script>
 <script src="../../js/service/IUserRoleService.js"></script>

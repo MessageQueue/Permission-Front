@@ -1,8 +1,10 @@
-app.controller("ResourceController", function ($scope, $controller, IResourceService) {
+app.controller("ResourceController", function ($scope, $controller,IResourceService) {
+
 
     $controller("baseController", {$scope: $scope});
-    $scope.windownInfo.title = "新增资源";
-    $scope.windownInfo.url = "../../views/resource/resource-add.html";
+    $scope.windownInfo.title = "资源管理";
+    $scope.windownInfo.url="../../views/resource/resource-add.html";
+
     $scope.searchEntity = {};
 
 
@@ -12,7 +14,7 @@ app.controller("ResourceController", function ($scope, $controller, IResourceSer
      *
      *
      * **/
-    $scope.findPage = function (page, rows) {
+        $scope.findPage = function (page, rows) {
         IResourceService.findPage(page, rows).then(function (response) {
             $scope.entitys = response.data.data.records;
             $scope.paginationConf.totalItems = response.data.data.total;
@@ -26,7 +28,7 @@ app.controller("ResourceController", function ($scope, $controller, IResourceSer
      * 获取单一实体
      *
      * */
-    $scope.findOneEntity = function (id) {
+        $scope.findOneEntity = function (id) {
         IResourceService.findOne(id).then(function (response) {
             if (response.data.code === 1000) {
                 $scope.entity = response.data.data;
@@ -41,7 +43,7 @@ app.controller("ResourceController", function ($scope, $controller, IResourceSer
      * 保存或则更改实体
      *
      * **/
-    $scope.saveOrUpdateEntity = function () {
+        $scope.saveOrUpdateEntity = function () {
         var serviceObject;
         if ($scope.entity.id != null) {
             serviceObject = IResourceService.update($scope.entity);
@@ -50,11 +52,11 @@ app.controller("ResourceController", function ($scope, $controller, IResourceSer
         }
         serviceObject.then(function (response) {
             if (response.data.code === 1000) {
-                $scope.closeDialog();
+                    $scope.closeDialog();
                 window.parent.document.getElementById("refresh").click();
             }
         });
-        $scope.selectIds=[];
+            $scope.selectIds=[];
     };
 
 
@@ -64,11 +66,11 @@ app.controller("ResourceController", function ($scope, $controller, IResourceSer
      * 删除实体
      *
      * */
-    $scope.delete = function () {
+        $scope.delete = function () {
         IResourceService.delete($scope.selectIds).then(function (response) {
             console.log(response);
             if (response.data.code === 1000) {
-                $scope.refreshPage();
+                    $scope.refreshPage();
                 $scope.selectIds = [];
             }
         });
@@ -80,7 +82,7 @@ app.controller("ResourceController", function ($scope, $controller, IResourceSer
      * 查找实体
      *
      * */
-    $scope.search = function (page, rows) {
+        $scope.search = function (page, rows) {
         IResourceService.search(page, rows, $scope.searchEntity).success(
             function (response) {
                 $scope.list = response.data.records;

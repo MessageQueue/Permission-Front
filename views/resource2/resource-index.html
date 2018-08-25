@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>角色管理</title>
+    <title>资源管理</title>
     <link rel="stylesheet" href="../../plugins/hplus/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../plugins/hplus/css/animate.min.css">
     <link rel="stylesheet" href="../../plugins/hplus/css/style.min862f.css">
@@ -10,16 +10,14 @@
     <link href="../../plugins/hplus/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
     <link rel="stylesheet" href="../../js/plugins/pagination.css">
 </head>
-<body ng-app="app">
-<div class="wrapper wrapper-content animated fadeInRight" ng-controller="RoleController" ng-init="findAll()">
-
-
+<body ng-app="app" class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight" ng-controller="ResourceController">
 
     <div class="row">
         <div class="col-sm-12">
             <div class="ibox float-e-margins">
                 <div class="ibox-title">
-                    <h5>角色管理</h5>
+                    <h5>边框</h5>
                     <div class="ibox-tools">
                         <a class="collapse-link">
                             <i class="fa fa-chevron-up"></i>
@@ -66,28 +64,27 @@
                             <th width="50px">
                                 <input type="checkbox" class="i-checks" ng-click="chooseAll($event)">
                             </th>
-                                                        <th>id</th>
-                                                        <th>上级角色</th>
-                                                        <th>状态</th>
-                                                        <th>名称</th>
-                                                        <th>别名</th>
-                                                        <th>更新时间</th>
-                                                        <th>创建时间</th>
-                                                    </tr>
+                            <th>#</th>
+                            <th>父级资源</th>
+                            <th>资源名称</th>
+                            <th>资源地址</th>
+                            <th>资源状态</th>
+                            <th>创建时间</th>
+                            <th>修改时间</th>
+                        </tr>
                         </thead>
                         <tbody>
                         <tr ng-repeat="item in entitys">
                             <td>
                                 <input type="checkbox" class="i-checks" ng-click="checkItem($event,item)">
                             </td>
-                                                            <td>{{item.id}}</td>
-                                                            <td>{{item.pid}}</td>
-                                                            <td>{{item.status}}</td>
-                                                            <td>{{item.name}}</td>
-                                                            <td>{{item.alias}}</td>
-                                                            <td>{{item.updateDate}}</td>
-                                                            <td>{{item.createDate}}</td>
-                            
+                            <td>{{ item.id }}</td>
+                            <td>{{ item.pid }}</td>
+                            <td>{{ item.name }}</td>
+                            <td>{{ item.url }}</td>
+                            <td>{{ item.status }}</td>
+                            <td>{{ item.createDate }}</td>
+                            <td>{{ item.updateDate }}</td>
                         </tr>
                         </tbody>
 
@@ -113,8 +110,8 @@
 <script src="../../js/app.js"></script>
 <script src="../../js/common/base.js"></script>
 <script src="../../js/common/baseController.js"></script>
-<script src="../../js/service/IRoleService.js"></script>
-<script src="../../js/controller/RoleController.js"></script>
+<script src="../../js/service/IResourceService.js"></script>
+<script src="../../js/controller/ResourceController.js"></script>
 
 </body>
 </html>

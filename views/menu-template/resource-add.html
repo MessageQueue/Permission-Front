@@ -18,25 +18,31 @@
 </head>
 
 <body ng-app="app">
-<div class="wrapper wrapper-content" ng-controller="UserRoleController" ng-init="judgeInsertOrUpdate()">
+<div class="wrapper wrapper-content" ng-controller="ResourceController">
     <div class="ibox float-e-margins">
 
         <form>
                                                                                             <div class="form-group">
-                        <label>用户编号</label>
-                        <input type="text" placeholder="请输入用户编号名称" class="form-control"
-                               ng-model="entity.uId"
-                               name="uId"/>
+                        <label>上级资源</label>
+                        <input type="text" placeholder="请输入上级资源名称" class="form-control"
+                               ng-model="entity.p_id"
+                               name="p_id"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>角色标号</label>
-                        <input type="text" placeholder="请输入角色标号名称" class="form-control"
-                               ng-model="entity.rId"
-                               name="rId"/>
+                        <label>资源名称</label>
+                        <input type="text" placeholder="请输入资源名称名称" class="form-control"
+                               ng-model="entity.name"
+                               name="name"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>状态</label>
-                        <input type="text" placeholder="请输入状态名称" class="form-control"
+                        <label>资源地址</label>
+                        <input type="text" placeholder="请输入资源地址名称" class="form-control"
+                               ng-model="entity.url"
+                               name="url"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>资源状态</label>
+                        <input type="text" placeholder="请输入资源状态名称" class="form-control"
                                ng-model="entity.status"
                                name="status"/>
                     </div>
@@ -63,8 +69,8 @@
 
 <script src="../../js/common/base.js"></script>
 <script src="../../js/common/baseController.js"></script>
-<script src="../../js/service/IUserRoleService.js"></script>
-<script src="../../js/controller/UserRoleController.js"></script>
+<script src="../../js/service/IResourceService.js"></script>
+<script src="../../js/controller/ResourceController.js"></script>
 
 <!--<script src="../../plugins/hplus/js/plugins/validate/bootstrapValidator.min.js"></script>-->
 <!--<script src="../../plugins/hplus/js/tree/treeWrapper.js"></script>-->

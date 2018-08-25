@@ -99,6 +99,7 @@ app.controller("baseController", function ($scope) {
             swal({title: "温馨提示", text: "请选择表格中的某一条记录"});
             return;
         }
+        console.log($scope.selectIds);
         swal({
             title: "您确定要删除吗",
             text: "删除后将无法恢复，请谨慎操作！",
@@ -134,7 +135,6 @@ app.controller("baseController", function ($scope) {
             swal({title: "温馨提示", text: "编辑的时候,只能对单行数据进行编辑"});
             return;
         }
-        // var params = 111;
         layer.open({
             type: 2,
             title: $scope.windownInfo.title,
@@ -175,6 +175,25 @@ app.controller("baseController", function ($scope) {
 
     /**
      *
+     *
+     *
+     * **/
+    $scope.chooseAll = function ($event) {
+        var checkbox = $event.target;
+        if (!checkbox.checked) {
+            $scope.selectIds = [];
+            $("table :input:checkbox").prop("checked", false);
+        } else {
+            $scope.entitys.forEach(function (value) {
+                $scope.selectIds.push(value.id);
+                $("table :input:checkbox").prop('checked', true);
+            })
+        }
+    };
+
+
+    /**
+     *
      * 判断insert
      *
      * */
@@ -186,7 +205,6 @@ app.controller("baseController", function ($scope) {
         } else {
             $scope.isUpdate = false;
         }
-
     }
 
 
