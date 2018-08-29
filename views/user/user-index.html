@@ -66,19 +66,21 @@
                             <th width="50px">
                                 <input type="checkbox" class="i-checks" ng-click="chooseAll($event)">
                             </th>
-                                                        <th>id</th>
-                                                        <th>用户名称</th>
-                                                        <th>用户头像</th>
-                                                        <th>用户账号</th>
-                                                        <th>用户密码</th>
-                                                        <th>用户邮箱</th>
-                                                        <th>加盐秘钥</th>
-                                                        <th>用户电话</th>
-                                                        <th>用户生日</th>
-                                                        <th>状态</th>
+                                                        <th>#</th>
+                                                        <th>姓名</th>
+                                                        <th>头像</th>
+                                                        <th>账号</th>
+                                                        <th>密码</th>
+                                                        <th>邮箱</th>
+                                                        <th></th>
+                                                        <th>电话</th>
+                                                        <th>生日</th>
                                                         <th>性别</th>
+                                                        <th>状态</th>
                                                         <th>创建时间</th>
                                                         <th>更新时间</th>
+                                                        <th>操作者</th>
+                                                        <th>备注</th>
                                                     </tr>
                         </thead>
                         <tbody>
@@ -95,10 +97,12 @@
                                                             <td>{{item.salt}}</td>
                                                             <td>{{item.phone}}</td>
                                                             <td>{{item.brithday}}</td>
-                                                            <td>{{item.status}}</td>
                                                             <td>{{item.sex}}</td>
+                                                            <td>{{item.status}}</td>
                                                             <td>{{item.createDate}}</td>
                                                             <td>{{item.updateDate}}</td>
+                                                            <td>{{item.operator}}</td>
+                                                            <td>{{item.remark}}</td>
                             
                         </tr>
                         </tbody>

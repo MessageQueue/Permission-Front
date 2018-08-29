@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a063c6dd-63a0-4a20-b256-e1b5beb9f1ab" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/views/menu-template/resource-add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/menu-template/resource-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/controller/DeptController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/service/IDeptService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/dept/dept-add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/dept/dept-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/common/baseController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common/baseController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controller/ResourceController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controller/ResourceController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controller/RoleController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controller/RoleController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controller/RoleResoureceController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controller/RoleResoureceController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controller/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controller/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/controller/UserRoleController.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/controller/UserRoleController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common/table-expand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/service/IResourceService.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/service/IResourceService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/layer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/main.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/resource/resource-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/resource/resource-add.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/resource/resource-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/resource/resource-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/resource/resource-index2.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/views/role/role-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/role/role-add.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/role/role-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/role/role-index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/roleresourece/roleresourece-add.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/roleresourece/roleresourece-add.html" afterDir="false" />
@@ -32,47 +32,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+            <state relative-caret-position="170">
+              <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResourceController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/controller/ResourceController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-            </state>
-          </provider>
+      <file leaf-file-name="dept-add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/dept/dept-add.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="resource-add.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/resource/resource-add.html">
+      <file leaf-file-name="DeptController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/controller/DeptController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="31" column="25" selection-end-line="77" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource-add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/resource2/resource-add.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="98" lean-forward="true" selection-start-line="15" selection-start-column="98" selection-end-line="15" selection-end-column="98" />
+            <state relative-caret-position="304">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -148,7 +126,6 @@
         <option value="$PROJECT_DIR$/views/menu/menu-index.html" />
         <option value="$PROJECT_DIR$/views/menu-template/menu-add.html" />
         <option value="$PROJECT_DIR$/views/menu-template/menu-index.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/common/base-common.js" />
         <option value="$PROJECT_DIR$/views/role/role-add.html" />
         <option value="$PROJECT_DIR$/views/user/user-index.html" />
@@ -169,6 +146,8 @@
         <option value="$PROJECT_DIR$/js/common/baseController.js" />
         <option value="$PROJECT_DIR$/views/resource/resource-index.html" />
         <option value="$PROJECT_DIR$/views/resource/resource-add.html" />
+        <option value="$PROJECT_DIR$/views/dept/dept-index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -187,8 +166,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1699" />
-    <option name="y" value="39" />
+    <option name="x" value="1698" />
+    <option name="y" value="50" />
     <option name="width" value="1711" />
     <option name="height" value="1004" />
   </component>
@@ -198,28 +177,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Admin-Manager-Permission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Admin-Manager-Permission" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Admin-Manager-Permission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Admin-Manager-Permission" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Admin-Manager-Permission" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Admin-Manager-Permission" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Permission-Front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Permission-Front" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -234,16 +203,16 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js" />
-      <recent name="$PROJECT_DIR$/js/menu" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$/views" />
       <recent name="$PROJECT_DIR$/js/controller" />
       <recent name="$PROJECT_DIR$/views/resource" />
       <recent name="$PROJECT_DIR$/views/menu-template" />
-      <recent name="$PROJECT_DIR$/js/plugins" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+      <recent name="$PROJECT_DIR$/js/menu" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -644,11 +613,12 @@
       <workItem from="1534920452379" duration="9955000" />
       <workItem from="1534987223915" duration="16203000" />
       <workItem from="1535165186314" duration="4615000" />
+      <workItem from="1535530206608" duration="2197000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90319000" />
+    <option name="totallyTimeSpent" value="92516000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,10 +630,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1699" y="39" width="1711" height="1004" extended-state="0" />
+    <frame x="1698" y="50" width="1711" height="1004" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24911243" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37278107" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3296582" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32807216" />
@@ -675,15 +645,15 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="Nl-Palette" order="2" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Properties" order="3" />
+      <window_info id="Nl-Palette" order="2" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="right" id="Database" order="3" />
@@ -698,14 +668,15 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24911243" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32897863" />
       <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32897863" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info anchor="right" id="Properties" order="5" />
@@ -716,10 +687,9 @@
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.2756219" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32807216" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32807216" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Capture Tool" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32807216" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Maven Projects" order="9" />
       <window_info id="Favorites" order="7" side_tool="true" />
@@ -729,7 +699,7 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="$USER_HOME$/Desktop/2018/html/实例代码/HTML5程序设计/es6/hello.js" />
+        <option value="$PROJECT_DIR$/../../../2018/html/实例代码/HTML5程序设计/es6/hello.js" />
       </list>
     </option>
   </component>
@@ -742,35 +712,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/roleresourece/roleresourece-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="73" column="19" lean-forward="true" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/roleresourece/roleresourece-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/hplus/css/style.min862f.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret column="10552" lean-forward="true" selection-start-column="10552" selection-end-column="10552" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugins/hplus/css/bootstrap.min14ed.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="4" column="92195" selection-start-line="4" selection-start-column="92195" selection-end-line="4" selection-end-column="92195" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/common/base-table.js" />
     <entry file="file://$PROJECT_DIR$/plugins/hplus/js/plugins/sweetalert/sweetalert.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -849,13 +790,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common/table-expand.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/plugins/hplus/js/plugins/bootstrap-table/bootstrap-table.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -870,13 +804,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/resource/resource-index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/views/resource/resource-index2.html" />
     <entry file="file://$PROJECT_DIR$/js/plugins/pagination.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -891,24 +819,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/plugins/pagination.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-872">
-          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/plugins/tm.pagination.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="59" selection-start-column="59" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/common/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
@@ -971,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/common/baseController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="55" column="24" lean-forward="true" selection-start-line="55" selection-start-column="24" selection-end-line="55" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/layer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -985,21 +892,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/menu-template/resource-add.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/resource2/resource-index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/resource2/resource-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="85" column="50" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/views/menu-template/resource-add.html" />
+    <entry file="file://$PROJECT_DIR$/views/resource2/resource-index2.html" />
+    <entry file="file://$PROJECT_DIR$/views/resource2/resource-index.html" />
     <entry file="file://$PROJECT_DIR$/views/role/role-add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-83">
@@ -1024,24 +919,11 @@
     <entry file="file://$PROJECT_DIR$/views/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="98" lean-forward="true" selection-start-line="15" selection-start-column="98" selection-end-line="15" selection-end-column="98" />
+          <caret line="15" column="98" selection-start-line="15" selection-start-column="98" selection-end-line="15" selection-end-column="98" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/resource2/resource-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/views/resource2/resource-add.html" />
     <entry file="file://$PROJECT_DIR$/js/controller/UserController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1065,14 +947,76 @@
     <entry file="file://$PROJECT_DIR$/js/controller/ResourceController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/resource/resource-add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="31" column="25" selection-end-line="77" selection-end-column="7" />
+        <state relative-caret-position="207">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/plugins/pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common/table-expand.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common/baseController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="54" column="16" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dept/dept-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dept/dept.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="36" lean-forward="true" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/dept/dept-add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/controller/DeptController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="9" column="59" lean-forward="true" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
         </state>
       </provider>
     </entry>

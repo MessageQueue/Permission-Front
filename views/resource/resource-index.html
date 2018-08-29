@@ -66,13 +66,16 @@
                             <th width="50px">
                                 <input type="checkbox" class="i-checks" ng-click="chooseAll($event)">
                             </th>
-                                                        <th>id</th>
-                                                        <th>上级资源</th>
-                                                        <th>资源名称</th>
-                                                        <th>资源地址</th>
-                                                        <th>资源状态</th>
+                                                        <th>#</th>
+                                                        <th>父级资源</th>
+                                                        <th>名称</th>
+                                                        <th>地址</th>
+                                                        <th>类型</th>
+                                                        <th>状态</th>
                                                         <th>创建时间</th>
-                                                        <th>修改时间</th>
+                                                        <th>更新时间</th>
+                                                        <th>操作者</th>
+                                                        <th>备注</th>
                                                     </tr>
                         </thead>
                         <tbody>
@@ -84,9 +87,12 @@
                                                             <td>{{item.pId}}</td>
                                                             <td>{{item.name}}</td>
                                                             <td>{{item.url}}</td>
+                                                            <td>{{item.type}}</td>
                                                             <td>{{item.status}}</td>
                                                             <td>{{item.createDate}}</td>
                                                             <td>{{item.updateDate}}</td>
+                                                            <td>{{item.operator}}</td>
+                                                            <td>{{item.remark}}</td>
                             
                         </tr>
                         </tbody>

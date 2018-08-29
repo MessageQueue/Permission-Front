@@ -23,58 +23,52 @@
 
         <form>
                                                                                             <div class="form-group">
-                        <label>用户名称</label>
-                        <input type="text" placeholder="请输入用户名称名称" class="form-control"
+                        <label>姓名</label>
+                        <input type="text" placeholder="请输入姓名名称" class="form-control"
                                ng-model="entity.name"
                                name="name"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>用户头像</label>
-                        <input type="text" placeholder="请输入用户头像名称" class="form-control"
+                        <label>头像</label>
+                        <input type="text" placeholder="请输入头像名称" class="form-control"
                                ng-model="entity.avartar"
                                name="avartar"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>用户账号</label>
-                        <input type="text" placeholder="请输入用户账号名称" class="form-control"
+                        <label>账号</label>
+                        <input type="text" placeholder="请输入账号名称" class="form-control"
                                ng-model="entity.account"
                                name="account"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>用户密码</label>
-                        <input type="text" placeholder="请输入用户密码名称" class="form-control"
+                        <label>密码</label>
+                        <input type="text" placeholder="请输入密码名称" class="form-control"
                                ng-model="entity.passwd"
                                name="passwd"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>用户邮箱</label>
-                        <input type="text" placeholder="请输入用户邮箱名称" class="form-control"
+                        <label>邮箱</label>
+                        <input type="text" placeholder="请输入邮箱名称" class="form-control"
                                ng-model="entity.email"
                                name="email"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>加盐秘钥</label>
-                        <input type="text" placeholder="请输入加盐秘钥名称" class="form-control"
+                        <label></label>
+                        <input type="text" placeholder="请输入名称" class="form-control"
                                ng-model="entity.salt"
                                name="salt"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>用户电话</label>
-                        <input type="text" placeholder="请输入用户电话名称" class="form-control"
+                        <label>电话</label>
+                        <input type="text" placeholder="请输入电话名称" class="form-control"
                                ng-model="entity.phone"
                                name="phone"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>用户生日</label>
-                        <input type="text" placeholder="请输入用户生日名称" class="form-control"
+                        <label>生日</label>
+                        <input type="text" placeholder="请输入生日名称" class="form-control"
                                ng-model="entity.brithday"
                                name="brithday"/>
-                    </div>
-                                                                <div class="form-group">
-                        <label>状态</label>
-                        <input type="text" placeholder="请输入状态名称" class="form-control"
-                               ng-model="entity.status"
-                               name="status"/>
                     </div>
                                                                 <div class="form-group">
                         <label>性别</label>
@@ -82,7 +76,25 @@
                                ng-model="entity.sex"
                                name="sex"/>
                     </div>
-                                                                                                                                <div>
+                                                                <div class="form-group">
+                        <label>状态</label>
+                        <input type="text" placeholder="请输入状态名称" class="form-control"
+                               ng-model="entity.status"
+                               name="status"/>
+                    </div>
+                                                                                                                                                        <div class="form-group">
+                        <label>操作者</label>
+                        <input type="text" placeholder="请输入操作者名称" class="form-control"
+                               ng-model="entity.operator"
+                               name="operator"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>备注</label>
+                        <input type="text" placeholder="请输入备注名称" class="form-control"
+                               ng-model="entity.remark"
+                               name="remark"/>
+                    </div>
+                                        <div>
                 <button class="btn btn-primary" ng-click="saveOrUpdateEntity()">{{isUpdate?"修改":"保存"}}</button>
                 <button class="btn btn-warning" ng-click="closeDialog()">取消</button>
             </div>

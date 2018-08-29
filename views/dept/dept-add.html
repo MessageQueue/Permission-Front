@@ -18,33 +18,33 @@
 </head>
 
 <body ng-app="app">
-<div class="wrapper wrapper-content" ng-controller="ResourceController" ng-init="judgeInsertOrUpdate()">
+<div class="wrapper wrapper-content" ng-controller="DeptController" ng-init="judgeInsertOrUpdate()">
     <div class="ibox float-e-margins">
 
         <form>
                                                                                             <div class="form-group">
-                        <label>父级资源</label>
-                        <input type="text" placeholder="请输入父级资源名称" class="form-control"
-                               ng-model="entity.pId"
-                               name="pId"/>
-                    </div>
-                                                                <div class="form-group">
                         <label>名称</label>
                         <input type="text" placeholder="请输入名称名称" class="form-control"
                                ng-model="entity.name"
                                name="name"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>地址</label>
-                        <input type="text" placeholder="请输入地址名称" class="form-control"
-                               ng-model="entity.url"
-                               name="url"/>
+                        <label>全称</label>
+                        <input type="text" placeholder="请输入全称名称" class="form-control"
+                               ng-model="entity.fullname"
+                               name="fullname"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>类型</label>
-                        <input type="text" placeholder="请输入类型名称" class="form-control"
-                               ng-model="entity.type"
-                               name="type"/>
+                        <label>序列</label>
+                        <input type="text" placeholder="请输入序列名称" class="form-control"
+                               ng-model="entity.sequeen"
+                               name="sequeen"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>上级部门</label>
+                        <input type="text" placeholder="请输入上级部门名称" class="form-control"
+                               ng-model="entity.pId"
+                               name="pId"/>
                     </div>
                                                                 <div class="form-group">
                         <label>状态</label>
@@ -87,8 +87,8 @@
 
 <script src="../../js/common/base.js"></script>
 <script src="../../js/common/baseController.js"></script>
-<script src="../../js/service/IResourceService.js"></script>
-<script src="../../js/controller/ResourceController.js"></script>
+<script src="../../js/service/IDeptService.js"></script>
+<script src="../../js/controller/DeptController.js"></script>
 
 <!--<script src="../../plugins/hplus/js/plugins/validate/bootstrapValidator.min.js"></script>-->
 <!--<script src="../../plugins/hplus/js/tree/treeWrapper.js"></script>-->

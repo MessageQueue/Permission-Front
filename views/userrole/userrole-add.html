@@ -29,8 +29,8 @@
                                name="uId"/>
                     </div>
                                                                 <div class="form-group">
-                        <label>角色标号</label>
-                        <input type="text" placeholder="请输入角色标号名称" class="form-control"
+                        <label>角色编号</label>
+                        <input type="text" placeholder="请输入角色编号名称" class="form-control"
                                ng-model="entity.rId"
                                name="rId"/>
                     </div>
@@ -40,7 +40,19 @@
                                ng-model="entity.status"
                                name="status"/>
                     </div>
-                                                                                                                                <div>
+                                                                                                                                                        <div class="form-group">
+                        <label>操作者</label>
+                        <input type="text" placeholder="请输入操作者名称" class="form-control"
+                               ng-model="entity.operator"
+                               name="operator"/>
+                    </div>
+                                                                <div class="form-group">
+                        <label>备注</label>
+                        <input type="text" placeholder="请输入备注名称" class="form-control"
+                               ng-model="entity.remark"
+                               name="remark"/>
+                    </div>
+                                        <div>
                 <button class="btn btn-primary" ng-click="saveOrUpdateEntity()">{{isUpdate?"修改":"保存"}}</button>
                 <button class="btn btn-warning" ng-click="closeDialog()">取消</button>
             </div>
