@@ -1,9 +1,9 @@
-app.controller("DeptController", function ($scope, $controller,IDeptService) {
+app.controller("DeptController", function ($scope, $controller, IDeptService) {
 
 
     $controller("baseController", {$scope: $scope});
     $scope.windownInfo.title = "部门管理";
-    $scope.windownInfo.url="../../views/dept/dept-add.html";
+    $scope.windownInfo.url = "../../views/dept/dept-add.html";
 
     $scope.searchEntity = {};
 
@@ -14,7 +14,7 @@ app.controller("DeptController", function ($scope, $controller,IDeptService) {
      *
      *
      * **/
-        $scope.findPage = function (page, rows) {
+    $scope.findPage = function (page, rows) {
         IDeptService.findPage(page, rows).then(function (response) {
             $scope.entitys = response.data.data.records;
             $scope.paginationConf.totalItems = response.data.data.total;
@@ -28,7 +28,7 @@ app.controller("DeptController", function ($scope, $controller,IDeptService) {
      * 获取单一实体
      *
      * */
-        $scope.findOneEntity = function (id) {
+    $scope.findOneEntity = function (id) {
         IDeptService.findOne(id).then(function (response) {
             if (response.data.code === 1000) {
                 $scope.entity = response.data.data;
@@ -43,7 +43,7 @@ app.controller("DeptController", function ($scope, $controller,IDeptService) {
      * 保存或则更改实体
      *
      * **/
-        $scope.saveOrUpdateEntity = function () {
+    $scope.saveOrUpdateEntity = function () {
         var serviceObject;
         if ($scope.entity.id != null) {
             serviceObject = IDeptService.update($scope.entity);
@@ -52,11 +52,11 @@ app.controller("DeptController", function ($scope, $controller,IDeptService) {
         }
         serviceObject.then(function (response) {
             if (response.data.code === 1000) {
-                    $scope.closeDialog();
+                $scope.closeDialog();
                 window.parent.document.getElementById("refresh").click();
             }
         });
-            $scope.selectIds=[];
+        $scope.selectIds = [];
     };
 
 
@@ -66,11 +66,11 @@ app.controller("DeptController", function ($scope, $controller,IDeptService) {
      * 删除实体
      *
      * */
-        $scope.delete = function () {
+    $scope.delete = function () {
         IDeptService.delete($scope.selectIds).then(function (response) {
             console.log(response);
             if (response.data.code === 1000) {
-                    $scope.refreshPage();
+                $scope.refreshPage();
                 $scope.selectIds = [];
             }
         });
@@ -82,7 +82,7 @@ app.controller("DeptController", function ($scope, $controller,IDeptService) {
      * 查找实体
      *
      * */
-        $scope.search = function (page, rows) {
+    $scope.search = function (page, rows) {
         IDeptService.search(page, rows, $scope.searchEntity).success(
             function (response) {
                 $scope.list = response.data.records;
@@ -90,6 +90,23 @@ app.controller("DeptController", function ($scope, $controller,IDeptService) {
             }
         );
     };
+
+
+    angular.element(document).ready(function () {
+        $("#deptTree").click(function () {
+            console.log("focus");
+            $("#tree_panel").slideToggle();
+
+        });
+        // $("#deptTree").blur(function () {
+        //     console.log("lost focus");
+        //     $("#tree_panel").slideUp();
+        // });
+        $("#treeview1").click(function (e ) {
+            $("#tree_panel").show();
+            console.log("click tree");
+        })
+    });
 
 
 });
