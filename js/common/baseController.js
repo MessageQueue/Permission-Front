@@ -38,10 +38,13 @@ app.controller("baseController", function ($scope) {
 
     /**
      *
-     * 是否是更新操作
+     * insert
+     * update
+     * index
+     *
      *
      * */
-    $scope.isUpdate = false;
+    $scope.pageType = "index";
 
 
     /**
@@ -199,11 +202,12 @@ app.controller("baseController", function ($scope) {
      * */
     $scope.judgeInsertOrUpdate = function () {
         var param = getQueryString("id");
-        if (param.length !== 0) {
+        if (param !== null && param.length !== 0) {
             $scope.findOneEntity(param);
-            $scope.isUpdate = true;
+            $scope.pageType = "update"
         } else {
-            $scope.isUpdate = false;
+            $scope.pageType = "insert";
+            $scope.entity.status = "1";
         }
     }
 
