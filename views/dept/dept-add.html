@@ -18,7 +18,7 @@
 </head>
 
 <body ng-app="app">
-<div class="wrapper wrapper-content" ng-controller="DeptController" ng-init="judgeInsertOrUpdate()">
+<div class="wrapper wrapper-content" ng-controller="DeptController" ng-init='judgeInsertOrUpdate()'>
     <div class="ibox float-e-margins">
 
         <form>
@@ -37,24 +37,20 @@
 
             <div class="form-group">
                 <label>上级部门</label>
-                <!--<input type="text" placeholder="请输入上级部门名称" class="form-control"-->
-                       <!--ng-model="entity.pId"-->
-                       <!--name="pId" id="deptTree" readonly="readonly"/>-->
+                <input style="display: none" ng-model="entity.pId">
+                <input type="text" placeholder="" class="form-control"
+                       name="pId" id="deptTree" readonly="readonly" ng-model="entity.parentName"/>
 
-                <input type="text" placeholder="请输入上级部门名称" class="form-control"
-                       ng-model="entity.pId"
-                       name="pId" />
-
-                <!--<div style="width: 300px; height: 150px; background-color: #EFEFEF; position: absolute ;display: none;overflow: scroll;"-->
-                     <!--id="tree_panel">-->
-                    <!--<div id="treeview1" class="test"></div>-->
-                <!--</div>-->
+                <div style="width: 300px; height: 150px; background-color: #EEEEEE; box-sizing: border-box; padding: 0 0; margin:  0 0; position: absolute ;display: none;overflow: scroll; overflow-x: hidden;"
+                     id="treeView">
+                </div>
             </div>
             <div class="form-group">
                 <label>状态</label>
-                <input type="text" placeholder="请输入状态名称" class="form-control"
-                       ng-model="entity.status"
-                       name="status"/>
+                <select class="form-control" ng-model="entity.status">
+                    <option value="1" selected>开启</option>
+                    <option value="0">关闭</option>
+                </select>
             </div>
 
             <div class="form-group">
@@ -84,14 +80,15 @@
 <script src="../../node_modules/angular/angular.min.js"></script>
 <script src="../../js/app.js"></script>
 <script src="../../js/plugins/tm.pagination.js"></script>
-<script src="../../plugins/hplus/js/plugins/treeview/bootstrap-treeview.js"></script>
+<script src="../../plugins/hplus/js/plugins/jsTree/jstree.min.js"></script>
 
 
 <script src="../../js/common/base.js"></script>
 <script src="../../js/common/baseController.js"></script>
 <script src="../../js/service/IDeptService.js"></script>
 <script src="../../js/controller/DeptController.js"></script>
-<script src="../../js/tree.js"></script>
+<script src="../../js/app.js"></script>
+
 
 <!--<script src="../../plugins/hplus/js/plugins/validate/bootstrapValidator.min.js"></script>-->
 <!--<script src="../../plugins/hplus/js/tree/treeWrapper.js"></script>-->
